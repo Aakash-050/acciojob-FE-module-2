@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Website</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <h1>Blog Website</h1>
+        <button id="create">Create New Post</button>
+    </nav>
+    <main id="blogs">
+    </main>
+    <div id="createModal" class="hide">
+        <div class="modalContent">
+            <header>
+                <h2>Create a post</h2>
+                <span class="closeIcon" id="createClose">X</span>
+            </header>
+            <form>
+                <input type="text" id="createHeading" placeholder="Enter your heading ...">
+                <textarea id="createContent" cols="30" rows="10" placeholder="Enter your blog post"></textarea>
+            </form>
+            <div class="btn-div">
+                <button id="publishPost">Publish Post</button>
+                <button id="cancelPost">Cancel Post</button>
+            </div>
+        </div>
+    </div>
+    <div id="editModal" class="hide">
+        <div class="modalContent">
+            <header>
+                <h2>Edit a post</h2>
+                <span class="closeIcon" id="editClose">X</span>
+            </header>
+            <form>
+                <input type="text" id="editHeading" placeholder="Enter your heading ...">
+                <textarea id="editContent" cols="30" rows="10" placeholder="Enter your blog post"></textarea>
+            </form>
+            <div class="btn-div">
+                <button id="savePost">Save Post</button>
+                <button id="deletePost">Delete Post</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

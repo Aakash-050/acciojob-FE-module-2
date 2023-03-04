@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body{
+    min-height: 100vh;
+    background-color: black;
+}
+
+main{
+    background-color: black;
+    padding: 10px;
+}
+
+.active{
+    display: block;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+}
+
+.hide{
+    display: none;
+}
+
+.modalContent{
+    width: 80%;
+}
+
+body nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(45, 44, 44);
+    padding: 10px;
+    color: white;
+}
+
+nav h1{
+    background-color: rgb(45, 44, 44);
+}
+
+nav #create{
+    width: 110px;
+    height: 40px;
+}
+
+.modalContent {
+    width: 50%;
+    height: 50%;
+    background-color: beige;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    background-color: white;
+  }
+
+  form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 25px;
+    margin-top: 10px;
+    height: 67%;
+  }
+
+  #createHeading,#editHeading{
+    width: 85%;
+    height: 30px;
+    color: black;
+  }
+
+  #createContent,#editContent{
+    width: 85%;
+    height: 75%;
+    color: black;
+  }
+
+.btn-div{
+    display: flex;
+    gap: 20px;
+    margin-left: 25px;
+  }
+
+  .btn-div button{
+    color: black;
+    background-color: white;
+    border-style: none;
+    padding: 5px;
+    border: 1px solid gray;
+  }
+
+  .modalContent  h2{
+    color: black;
+  }
+
+  .modalContent header{
+    margin-top: 10px;
+    margin-left: 25px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .blog{
+    display: flex;
+    gap: 10px;
+    margin: 15px 8px;
+    flex-direction: column;
+    border: 2px inset white;
+    padding: 20px;
+  }
+
+  .blog > div:nth-child(3){
+    display:flex;
+    justify-content: space-between;
+  }
+
+  .buttonContainer{
+    display: flex;
+    gap: 10px;
+  }
+
+  .buttonContainer button{
+    padding: 5px;
+    color: white;
+    background-color: black;
+  }
+
+ button{
+    border-radius: 4px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+  }
+
+  .closeIcon{
+    color: black;
+    font-size: x-large;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+
